@@ -1,0 +1,3 @@
+# The example program is documentation, not library code
+ignore:
+  - "example"
