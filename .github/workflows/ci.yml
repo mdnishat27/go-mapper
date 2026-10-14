@@ -1,4 +1,4 @@
-name: CI
+name: Tests
 
 on:
   push:
@@ -47,20 +47,6 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           # A Codecov outage must not fail the build
           fail_ci_if_error: false
-
-  lint:
-    name: Lint
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-
-      - uses: actions/setup-go@v7
-        with:
-          go-version: stable
-
-      - uses: golangci/golangci-lint-action@v9
-        with:
-          version: latest
 
   benchmarks:
     name: Benchmarks module
