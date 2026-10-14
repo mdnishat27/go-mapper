@@ -1,12 +1,33 @@
-# go-mapper
+<div align="center">
 
-[![CI](https://github.com/mdnishat27/go-mapper/actions/workflows/ci.yml/badge.svg)](https://github.com/mdnishat27/go-mapper/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/mdnishat27/go-mapper/graph/badge.svg)](https://codecov.io/gh/mdnishat27/go-mapper)
-[![Go Reference](https://pkg.go.dev/badge/github.com/mdnishat27/go-mapper.svg)](https://pkg.go.dev/github.com/mdnishat27/go-mapper)
-[![Go Version](https://img.shields.io/github/go-mod/go-version/mdnishat27/go-mapper)](./go.mod)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](./LICENSE)
+<h1>🔁 go-mapper</h1>
 
-**Type-safe struct mapping for Go, powered by generics.** Register each conversion once, then call it from anywhere: no reflection-based field copying, no struct tags and no code generation.
+<p><strong>Type-safe struct mapping for Go, powered by generics.</strong></p>
+
+<p>Register each conversion once, then call it from anywhere.<br>
+No reflection-based field copying, no struct tags, no code generation.</p>
+
+<p>
+  <a href="https://github.com/mdnishat27/go-mapper/actions/workflows/ci.yml"><img src="https://github.com/mdnishat27/go-mapper/actions/workflows/ci.yml/badge.svg?branch=main" alt="Tests"></a>
+  <a href="https://github.com/mdnishat27/go-mapper/actions/workflows/lint.yml"><img src="https://github.com/mdnishat27/go-mapper/actions/workflows/lint.yml/badge.svg?branch=main" alt="Lint"></a>
+  <a href="https://codecov.io/gh/mdnishat27/go-mapper"><img src="https://codecov.io/gh/mdnishat27/go-mapper/graph/badge.svg" alt="codecov"></a>
+  <a href="https://pkg.go.dev/github.com/mdnishat27/go-mapper"><img src="https://pkg.go.dev/badge/github.com/mdnishat27/go-mapper.svg" alt="Go Reference"></a>
+  <a href="https://github.com/mdnishat27/go-mapper/releases/latest"><img src="https://img.shields.io/github/v/release/mdnishat27/go-mapper" alt="Latest release"></a>
+  <a href="./go.mod"><img src="https://img.shields.io/github/go-mod/go-version/mdnishat27/go-mapper" alt="Go Version"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg" alt="License"></a>
+</p>
+
+<p>
+  <a href="#installation">Installation</a> •
+  <a href="#quick-start">Quick Start</a> •
+  <a href="#api-at-a-glance">API</a> •
+  <a href="#performance">Benchmarks</a> •
+  <a href="https://pkg.go.dev/github.com/mdnishat27/go-mapper">Docs</a>
+</p>
+
+</div>
+
+<br>
 
 ```go
 mapper.RegisterMapper[User, UserDTO](MapUserToDTO)
