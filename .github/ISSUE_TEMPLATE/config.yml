@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/mdnishat27/go-mapper/security/advisories/new
+    about: Please report security problems privately, not in a public issue.
+  - name: Documentation
+    url: https://pkg.go.dev/github.com/mdnishat27/go-mapper
+    about: Full API documentation with runnable examples.

@@ -1,0 +1,42 @@
+name: Bug report
+description: Something in go-mapper does not work as documented
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug, including what you expected to happen instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Code to reproduce
+      description: The smallest program or test that shows the problem.
+      render: go
+    validations:
+      required: true
+
+  - type: textarea
+    id: output
+    attributes:
+      label: Actual output or error
+      render: text
+
+  - type: input
+    id: version
+    attributes:
+      label: go-mapper version
+      placeholder: v0.1.0
+    validations:
+      required: true
+
+  - type: input
+    id: go-version
+    attributes:
+      label: Output of `go version`
+      placeholder: go version go1.25.3 linux/amd64
+    validations:
+      required: true

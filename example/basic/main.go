@@ -1,3 +1,5 @@
+// Command basic demonstrates mapping single values and slices with go-mapper,
+// and checking and removing registered mappings.
 package main
 
 import (
